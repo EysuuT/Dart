@@ -19,7 +19,7 @@ class GeometryCalculator extends AreaCalculator {
     ss.forEach((e) => list.add(e));
 
     for (int i = 1; i < list.length; i++) {
-      numlist.add(double.parse(list[1]));
+      numlist.add(double.parse(list[i]));
     }
 
     calculator(list[0], numlist);
@@ -39,6 +39,8 @@ class GeometryCalculator extends AreaCalculator {
       case "circle":
         Circle(geometrycform, num[0]);
         break;
+      default:
+        print("Geometryc form not defined!!!!!!");
     }
   }
 }
